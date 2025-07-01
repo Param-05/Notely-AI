@@ -16,7 +16,7 @@ import SidebarGroupContent from "./SidebarGroupContent"
       let notes: Note[] = []
 
       if (user) {
-
+ 
       notes = await prisma.note.findMany({
             where: {
                 authorId: user.id,
